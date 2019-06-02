@@ -1,0 +1,17 @@
+dist/
+node_modules/
+log/
+logs/
+backup/
+data/*
+settings/*
+
+deploy.sh
+.DS_Store
+*.log
+*~
+
+*.sublime-workspace
+
+coverage/*
+tmp/*
