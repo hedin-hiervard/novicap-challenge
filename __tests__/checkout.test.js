@@ -58,4 +58,25 @@ describe('checkout', () => {
             co.scan('CHOCOLATE')
         }).toThrow()
     })
+
+    it('no currency conversion should be supported', () => {
+        const product_list = [ {
+            code: 'PR1',
+            name: 'product 1',
+            price: 10,
+            currency: 'USD',
+        }, {
+            code: 'PR2',
+            name: 'product 2',
+            price: 20,
+            currency: 'EUR',
+        }]
+        const discount_list = []
+        const co = new Checkout({ product_list, discount_list })
+
+        co.scan('PR1')
+        expect(() => {
+            co.scan('PR2')
+        }).toThrow()
+    })
 })
