@@ -16,7 +16,7 @@
     "@babel/polyfill": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "flow-bin": "^0.100.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "ual": "^0.1.1",
     "youch": "^2.0.10",
     "youch-terminal": "^1.0.0"
